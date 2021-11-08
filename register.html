@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    https://getbootstrap.com/-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+<body>
+<!--copy paste nav bar here-->
+<!--navbar was removed here-->
+
+{% include 'navbar.html' %}
+<section class="container">
+    <h3>Create Account</h3><br>
+    <a href="/login">Back to login</a>
+    <div class="col-md-12">
+        <form action="/register" method="post">
+            <label for="">Customer's Name</label><br>
+            <input type="Name" name="customer_firstname" placeholder="firstname">
+            <input type="Name" name="customer_lastname" placeholder="lastname">
+            <input type="Name" name="customer_surname" placeholder="surname">
+            <br><br>
+            <label for="">Phone Number</label><br>
+            <input type="tel" name="customer_phone" placeholder="Your phone number"><br><br>
+            <label for="">Customer's Email</label><br>
+            <input type="email" name="customer_email" placeholder="Your email">
+            <br><br>
+            <input type="password" name="customer_password" placeholder="password">
+            <input type="password" name="confirm_password" placeholder="confirm your password">
+            <br><br>
+            <label for="">Gender</label>
+            <input type="Radio" name="customer_gender">Male
+            <input type="Radio" name="customer_gender">Female
+            <br><br>
+            <label for="">Address</label><br>
+            <input type="name" name="customer_address" placeholder="Your Physical address">
+            <br><br>
+            <labe>Date of birth</labe><br>
+            <input type="date" name="dob" placeholder="Your DOB">
+            <br><br>
+            <input type="submit" value="registar">
+            <br><br>
+            <input type="submit" value="restart">
+
+
+        </form>
+
+    </div>
+
+</section>
+<br><br>
+
+<!--footer was removed here-->
+{% include 'footer.html' %}
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
